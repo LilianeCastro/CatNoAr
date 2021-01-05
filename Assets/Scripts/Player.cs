@@ -49,9 +49,4 @@ public class Player : MonoBehaviour
             _playerRb.AddForce(new Vector2(_playerRb.velocity.x, _playerForceJump));
         }
     }
-
-    private void OnTAP(InputValue value)
-    {
-        print("tap" + value.Get());
-    }
 }
