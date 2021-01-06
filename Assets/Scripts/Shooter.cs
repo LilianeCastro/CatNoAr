@@ -7,7 +7,6 @@ public class Shooter : MonoBehaviour
 {
     private Control _control;
     private Camera _camera;
-    private LineRenderer _lineRenderer;
 
     private bool _canShoot = true;
 
@@ -25,8 +24,6 @@ public class Shooter : MonoBehaviour
     {
         _control = new Control();
         _camera = Camera.main;
-        
-        _lineRenderer = GetComponent<LineRenderer>();
     }
 
     private void OnEnable()
@@ -55,8 +52,6 @@ public class Shooter : MonoBehaviour
         if ( angle > 0 && angle < 190)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            _lineRenderer.SetPosition(0, new Vector3(_directionToShoot.position.x, _directionToShoot.position.y, _directionToShoot.position.z));
-            _lineRenderer.SetPosition(1, transform.position);
         }
             
     }
@@ -64,11 +59,12 @@ public class Shooter : MonoBehaviour
     private void Shoot()
     {
         if (!_canShoot) { return ;}
-        _canShoot = false;
-        Instantiate(_projectile, _directionToShoot.position, _directionToShoot.rotation);
 
+        _canShoot = false;
+        
+        Instantiate(_projectile, _directionToShoot.position, _directionToShoot.rotation);
+        
         StartCoroutine(DelayShoot());
-        //se tiver carregado pode atirar
     }
 
     private IEnumerator DelayShoot()
