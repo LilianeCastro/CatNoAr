@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: d5683a8b0714bd14b81af21323ef8f7e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: pedra flutuante
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 4
+      width: 180
+      height: 229
+    spriteID: 7ed91262fd1f06a418286edee0998d2c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 627, y: -223}
+  - name: "adere\xE7o"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 451
+      width: 135
+      height: 199
+    spriteID: 722ae53146668c746be4c71041348700
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 614, y: -206}
+  - name: fogo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1716
+      y: 804
+      width: 63
+      height: 80
+    spriteID: 9277fb3b1e2569a489391bb5caa12265
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 180, y: 111}
+  - name: aboboda
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 241
+      width: 144
+      height: 202
+    spriteID: 09649902c41fb8149b3f534963bb3eb4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: -255}
+  - name: mini ponte
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 658
+      width: 155
+      height: 56
+    spriteID: 76f125c399ac653418f6c722a9c022fe
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 944, y: -139}
+  - name: escada 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 895
+      width: 118
+      height: 69
+    spriteID: 28813bd72db0475489aaa902a47df088
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 227, y: 374}
+  - name: escada 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1898
+      y: 4
+      width: 117
+      height: 59
+    spriteID: 6db6ebfe2c38c114581c578de1cfdba8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 559, y: -530}
+  - name: escada 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1898
+      y: 71
+      width: 110
+      height: 61
+    spriteID: 0daa55e2663d4924f93f9503130e9110
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 598, y: -465}
+  - name: escada 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 972
+      width: 105
+      height: 76
+    spriteID: a634cc5bfbbd8a84f9c7d571df25f7ae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 342, y: 435}
+  - name: escada 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1793
+      y: 92
+      width: 94
+      height: 73
+    spriteID: 8d1975267a65640418380a2c26c47f8d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 571, y: -460}
+  - name: escada 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1793
+      y: 4
+      width: 97
+      height: 80
+    spriteID: 217aeeb08b6e11845a3e28e306a2780c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 617, y: -562}
+  - name: escada 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 1056
+      width: 99
+      height: 80
+    spriteID: 47387edf3f2f9204a8446034b63abac2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 467, y: 473}
+  - name: escada 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 804
+      width: 103
+      height: 83
+    spriteID: a81df0deec0a9fd4c99b39a495ec0b2d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 506, y: 199}
+  - name: escada 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 722
+      width: 116
+      height: 74
+    spriteID: 0230bf731302bb141ba0c379574b5883
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 535, y: 91}
+  - name: cenario
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1593
+      height: 1171
+    spriteID: eac41d0e32885f848b1a6d84d879794a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -73, y: -108}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1920, y: 1358}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: cenario
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 17
+    mosaicPosition: {x: 0, y: 0}
+  - name: pedra flutuante
+    spriteName: pedra flutuante
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7ed91262fd1f06a418286edee0998d2c
+    layerID: 6
+    mosaicPosition: {x: 1605, y: 4}
+  - name: "adere\xE7o"
+    spriteName: "adere\xE7o"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 722ae53146668c746be4c71041348700
+    layerID: 8
+    mosaicPosition: {x: 1605, y: 451}
+  - name: fogo
+    spriteName: fogo
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9277fb3b1e2569a489391bb5caa12265
+    layerID: 9
+    mosaicPosition: {x: 1716, y: 804}
+  - name: aboboda
+    spriteName: aboboda
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 09649902c41fb8149b3f534963bb3eb4
+    layerID: 10
+    mosaicPosition: {x: 1605, y: 241}
+  - name: mini ponte
+    spriteName: mini ponte
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 76f125c399ac653418f6c722a9c022fe
+    layerID: 11
+    mosaicPosition: {x: 1605, y: 658}
+  - name: escada
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+  - name: escada 1
+    spriteName: escada 1
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 28813bd72db0475489aaa902a47df088
+    layerID: 19
+    mosaicPosition: {x: 1605, y: 895}
+  - name: escada 2
+    spriteName: escada 2
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 6db6ebfe2c38c114581c578de1cfdba8
+    layerID: 20
+    mosaicPosition: {x: 1898, y: 4}
+  - name: escada 3
+    spriteName: escada 3
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 0daa55e2663d4924f93f9503130e9110
+    layerID: 21
+    mosaicPosition: {x: 1898, y: 71}
+  - name: escada 4
+    spriteName: escada 4
+    isGroup: 0
+    parentIndex: 6
+    spriteID: a634cc5bfbbd8a84f9c7d571df25f7ae
+    layerID: 28
+    mosaicPosition: {x: 1605, y: 972}
+  - name: escada 5
+    spriteName: escada 5
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 8d1975267a65640418380a2c26c47f8d
+    layerID: 23
+    mosaicPosition: {x: 1793, y: 92}
+  - name: escada 6
+    spriteName: escada 6
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 217aeeb08b6e11845a3e28e306a2780c
+    layerID: 24
+    mosaicPosition: {x: 1793, y: 4}
+  - name: escada 7
+    spriteName: escada 7
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 47387edf3f2f9204a8446034b63abac2
+    layerID: 25
+    mosaicPosition: {x: 1605, y: 1056}
+  - name: escada 8
+    spriteName: escada 8
+    isGroup: 0
+    parentIndex: 6
+    spriteID: a81df0deec0a9fd4c99b39a495ec0b2d
+    layerID: 26
+    mosaicPosition: {x: 1605, y: 804}
+  - name: escada 9
+    spriteName: escada 9
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 0230bf731302bb141ba0c379574b5883
+    layerID: 27
+    mosaicPosition: {x: 1605, y: 722}
+  - name: cenario
+    spriteName: cenario
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eac41d0e32885f848b1a6d84d879794a
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Cenario3 Texture
+  prefabAssetName: Cenario3 Prefab
+  spriteLibAssetName: Cenario3 Sprite Lib
+  secondarySpriteTextures: []

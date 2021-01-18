@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Deadline
+  - StairPoint1
+  - StairPoint2
+  - StairPoint3
   layers:
   - Default
   - TransparentFX
@@ -45,9 +48,15 @@ TagManager:
   - name: Player
     uniqueID: 3216404729
     locked: 0
+  - name: Cenario
+    uniqueID: 134062261
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Foreground
     uniqueID: 2035415119
+    locked: 0
+  - name: HUD
+    uniqueID: 648136737
     locked: 0
