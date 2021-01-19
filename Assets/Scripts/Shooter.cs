@@ -9,15 +9,19 @@ public class Shooter : MonoBehaviour
     private Camera _camera;
 
     private bool _canShoot = true;
+    private bool _playerInAreaToShoot = false;
 
     public Transform _directionToShoot;
     public GameObject _projectile;
 
     [SerializeField]
-    [Range(0.5f, 2f)]private float _minDelayShoot;
+    [Range(0.5f, 2.0f)]private float _minDelayShoot = 0.5f;
 
     [SerializeField]
-    [Range(2.1f, 5f)]private float _maxDelayShoot;
+    [Range(2.1f, 5.0f)]private float _maxDelayShoot = 5.0f;
+
+    [SerializeField] private float _angleMinToRotation = -60.0f;
+    [SerializeField] private float _angleMaxToRotation = 30.0f;
 
 
     private void Awake()
@@ -43,22 +47,24 @@ public class Shooter : MonoBehaviour
 
     private void Update()
     {
+        if (!_playerInAreaToShoot) { return ; }
+
         Vector2 mouseScreenPosition = _control.Gameplay.MousePosition.ReadValue<Vector2>();
         Vector3 mouseWorldPosition = _camera.ScreenToWorldPoint(mouseScreenPosition);
         Vector3 targetDirection = mouseWorldPosition - transform.position;
 
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * 90;
+        float currentAngle = Mathf.Atan2(targetDirection.y, targetDirection.x) * 90;
 
-        if ( angle > 0 && angle < 190)
+        if ( currentAngle > _angleMinToRotation && currentAngle < _angleMaxToRotation)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, currentAngle));
         }
             
     }
 
     private void Shoot()
     {
-        if (!_canShoot) { return ;}
+        if (!_canShoot || !_playerInAreaToShoot) { return ;}
 
         _canShoot = false;
         
@@ -73,5 +79,21 @@ public class Shooter : MonoBehaviour
 
         yield return new WaitForSeconds(delayShoot);
         _canShoot = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _playerInAreaToShoot = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _playerInAreaToShoot = false;
+        }
     }
 }
