@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8401752550477086956}
+  - component: {fileID: 782536354}
+  - component: {fileID: 782536353}
   m_Layer: 9
   m_Name: Mid Terrain
   m_TagString: Untagged
@@ -32,6 +34,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &782536354
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001124255733176005}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
+--- !u!254 &782536353
+RelativeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001124255733176005}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: -0.3326016, y: 6.7}
+  m_AngularOffset: 0
 --- !u!1 &2391004763482232143
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,13 +173,14 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.6184998, y: 1.2861826}
-  - {x: -1.7278149, y: 1.2870644}
-  - {x: -0.5893063, y: 0.9722119}
+  - {x: -5.7907815, y: 1.0600625}
+  - {x: -1.6524415, y: 1.190156}
+  - {x: -0.5893063, y: 0.9076062}
   - {x: 1.8064287, y: 0.2518059}
   - {x: 2.6934826, y: -0.21947384}
   - {x: 2.7288864, y: -0.3663218}
-  - {x: 3.9080937, y: -0.31546748}
+  - {x: 4.1050663, y: -0.266194}
+  - {x: 4.2502775, y: -0.25057065}
 --- !u!1 &4647114884314387839
 GameObject:
   m_ObjectHideFlags: 0

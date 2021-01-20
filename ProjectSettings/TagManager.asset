@@ -9,6 +9,7 @@ TagManager:
   - StairPoint2
   - StairPoint3
   - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX

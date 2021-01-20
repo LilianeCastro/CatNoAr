@@ -133,8 +133,8 @@ ScriptedImporter:
     uvTransform: {x: -664, y: 536}
   - name: sorvete
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4231628, y: 0.1567021}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

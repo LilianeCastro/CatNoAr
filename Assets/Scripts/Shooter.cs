@@ -14,9 +14,10 @@ public class Shooter : MonoBehaviour
     public Transform _directionToShoot;
     public GameObject _projectile;
 
+    private Quaternion _initialRotation;
+
     [SerializeField]
     [Range(0.5f, 2.0f)]private float _minDelayShoot = 0.5f;
-
     [SerializeField]
     [Range(2.1f, 5.0f)]private float _maxDelayShoot = 5.0f;
 
@@ -42,6 +43,7 @@ public class Shooter : MonoBehaviour
 
     private void Start()
     {
+        _initialRotation = transform.rotation;
         _control.Gameplay.Shoot.performed += ctx => Shoot();
     }
 
@@ -94,6 +96,7 @@ public class Shooter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _playerInAreaToShoot = false;
+            transform.rotation = Quaternion.Euler(_initialRotation.x, _initialRotation.y, _initialRotation.z);
         }
     }
 }

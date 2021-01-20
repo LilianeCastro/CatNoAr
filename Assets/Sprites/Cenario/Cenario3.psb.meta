@@ -95,7 +95,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1605
-      y: 293
+      y: 525
       width: 180
       height: 229
     spriteID: 7ed91262fd1f06a418286edee0998d2c
@@ -108,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 627, y: 66}
+    uvTransform: {x: 627, y: 298}
   - name: "adere\xE7o"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -117,9 +117,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1605
-      y: 740
-      width: 135
-      height: 199
+      y: 293
+      width: 191
+      height: 219
     spriteID: 722ae53146668c746be4c71041348700
     internalID: 0
     spriteBone: []
@@ -130,11 +130,11 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 614, y: 83}
+    uvTransform: {x: 614, y: -364}
   - name: fogo
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.51143, y: -0.0040205}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -153,28 +153,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 410, y: -520}
-  - name: aboboda
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1605
-      y: 530
-      width: 144
-      height: 202
-    spriteID: 09649902c41fb8149b3f534963bb3eb4
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 121, y: 34}
   - name: mini ponte
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -182,8 +160,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1605
-      y: 947
+      x: 1810
+      y: 293
       width: 155
       height: 56
     spriteID: 76f125c399ac653418f6c722a9c022fe
@@ -196,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 944, y: 150}
+    uvTransform: {x: 1149, y: -504}
   - name: escada 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,8 +182,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1605
-      y: 1093
+      x: 4
+      y: 1183
       width: 118
       height: 69
     spriteID: 28813bd72db0475489aaa902a47df088
@@ -218,7 +196,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 227, y: 572}
+    uvTransform: {x: -1374, y: 662}
   - name: escada 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -226,8 +204,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1904
-      y: 377
+      x: 130
+      y: 1183
       width: 117
       height: 59
     spriteID: 6db6ebfe2c38c114581c578de1cfdba8
@@ -240,7 +218,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 565, y: -157}
+    uvTransform: {x: -1209, y: 649}
   - name: escada 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -248,8 +226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1904
-      y: 444
+      x: 1810
+      y: 702
       width: 110
       height: 61
     spriteID: 0daa55e2663d4924f93f9503130e9110
@@ -262,7 +240,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 604, y: -92}
+    uvTransform: {x: 510, y: 166}
   - name: escada 4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -270,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1904
-      y: 293
+      x: 1810
+      y: 530
       width: 105
       height: 76
     spriteID: a634cc5bfbbd8a84f9c7d571df25f7ae
@@ -284,7 +262,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 641, y: -244}
+    uvTransform: {x: 547, y: -7}
   - name: escada 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -336,8 +314,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1793
-      y: 384
+      x: 1810
+      y: 614
       width: 99
       height: 80
     spriteID: 47387edf3f2f9204a8446034b63abac2
@@ -350,7 +328,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 655, y: -199}
+    uvTransform: {x: 672, y: 31}
   - name: escada 8
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -358,8 +336,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1793
-      y: 293
+      x: 1810
+      y: 439
       width: 103
       height: 83
     spriteID: a81df0deec0a9fd4c99b39a495ec0b2d
@@ -372,7 +350,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 694, y: -312}
+    uvTransform: {x: 711, y: -166}
   - name: escada 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -380,8 +358,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1605
-      y: 1011
+      x: 1810
+      y: 357
       width: 116
       height: 74
     spriteID: 0230bf731302bb141ba0c379574b5883
@@ -394,29 +372,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 535, y: 380}
-  - name: cenario
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 1593
-      height: 1171
-    spriteID: eac41d0e32885f848b1a6d84d879794a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -73, y: -108}
+    uvTransform: {x: 740, y: -274}
   - name: arvore
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -446,8 +402,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1768
-      y: 947
+      x: 1946
+      y: 261
       width: 6
       height: 7
     spriteID: d1d8b5cfbcb77aa42ae6295be3f2f002
@@ -460,7 +416,73 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 969, y: 273}
+    uvTransform: {x: 1147, y: -413}
+  - name: cenario
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1593
+      height: 1171
+    spriteID: aee69a56db29ea5489cb98e2ddb47af5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -73, y: -108}
+  - name: abobodaCima
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 972
+      width: 108
+      height: 202
+    spriteID: 17be410d6412e4a4ebd7a789d080a8b8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 476}
+  - name: aboboda
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1605
+      y: 762
+      width: 144
+      height: 202
+    spriteID: c0efd75086f008346b03a4dda32151cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 121, y: 266}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -493,14 +515,14 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: 7ed91262fd1f06a418286edee0998d2c
     layerID: 6
-    mosaicPosition: {x: 1605, y: 293}
+    mosaicPosition: {x: 1605, y: 525}
   - name: "adere\xE7o"
     spriteName: "adere\xE7o"
     isGroup: 0
     parentIndex: 0
     spriteID: 722ae53146668c746be4c71041348700
     layerID: 8
-    mosaicPosition: {x: 1605, y: 740}
+    mosaicPosition: {x: 1605, y: 293}
   - name: fogo
     spriteName: fogo
     isGroup: 0
@@ -508,20 +530,27 @@ ScriptedImporter:
     spriteID: 9277fb3b1e2569a489391bb5caa12265
     layerID: 9
     mosaicPosition: {x: 1946, y: 173}
+  - name: abobodaCima
+    spriteName: abobodaCima
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 17be410d6412e4a4ebd7a789d080a8b8
+    layerID: 33
+    mosaicPosition: {x: 1605, y: 972}
   - name: aboboda
     spriteName: aboboda
     isGroup: 0
     parentIndex: 0
-    spriteID: 09649902c41fb8149b3f534963bb3eb4
+    spriteID: c0efd75086f008346b03a4dda32151cf
     layerID: 10
-    mosaicPosition: {x: 1605, y: 530}
+    mosaicPosition: {x: 1605, y: 762}
   - name: mini ponte
     spriteName: mini ponte
     isGroup: 0
     parentIndex: 0
     spriteID: 76f125c399ac653418f6c722a9c022fe
     layerID: 11
-    mosaicPosition: {x: 1605, y: 947}
+    mosaicPosition: {x: 1810, y: 293}
   - name: escada
     spriteName: 
     isGroup: 1
@@ -532,66 +561,66 @@ ScriptedImporter:
   - name: escada 1
     spriteName: escada 1
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 28813bd72db0475489aaa902a47df088
     layerID: 19
-    mosaicPosition: {x: 1605, y: 1093}
+    mosaicPosition: {x: 4, y: 1183}
   - name: escada 2
     spriteName: escada 2
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 6db6ebfe2c38c114581c578de1cfdba8
     layerID: 20
-    mosaicPosition: {x: 1904, y: 377}
+    mosaicPosition: {x: 130, y: 1183}
   - name: escada 3
     spriteName: escada 3
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 0daa55e2663d4924f93f9503130e9110
     layerID: 21
-    mosaicPosition: {x: 1904, y: 444}
+    mosaicPosition: {x: 1810, y: 702}
   - name: escada 4
     spriteName: escada 4
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: a634cc5bfbbd8a84f9c7d571df25f7ae
     layerID: 28
-    mosaicPosition: {x: 1904, y: 293}
+    mosaicPosition: {x: 1810, y: 530}
   - name: escada 5
     spriteName: escada 5
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 8d1975267a65640418380a2c26c47f8d
     layerID: 23
     mosaicPosition: {x: 1946, y: 92}
   - name: escada 6
     spriteName: escada 6
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 217aeeb08b6e11845a3e28e306a2780c
     layerID: 24
     mosaicPosition: {x: 1946, y: 4}
   - name: escada 7
     spriteName: escada 7
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 47387edf3f2f9204a8446034b63abac2
     layerID: 25
-    mosaicPosition: {x: 1793, y: 384}
+    mosaicPosition: {x: 1810, y: 614}
   - name: escada 8
     spriteName: escada 8
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: a81df0deec0a9fd4c99b39a495ec0b2d
     layerID: 26
-    mosaicPosition: {x: 1793, y: 293}
+    mosaicPosition: {x: 1810, y: 439}
   - name: escada 9
     spriteName: escada 9
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 7
     spriteID: 0230bf731302bb141ba0c379574b5883
     layerID: 27
-    mosaicPosition: {x: 1605, y: 1011}
+    mosaicPosition: {x: 1810, y: 357}
   - name: arvore
     spriteName: arvore
     isGroup: 0
@@ -605,12 +634,12 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: d1d8b5cfbcb77aa42ae6295be3f2f002
     layerID: 30
-    mosaicPosition: {x: 1768, y: 947}
+    mosaicPosition: {x: 1946, y: 261}
   - name: cenario
     spriteName: cenario
     isGroup: 0
     parentIndex: -1
-    spriteID: eac41d0e32885f848b1a6d84d879794a
+    spriteID: aee69a56db29ea5489cb98e2ddb47af5
     layerID: 3
     mosaicPosition: {x: 4, y: 4}
   characterData:

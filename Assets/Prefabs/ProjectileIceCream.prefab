@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5850899369002924622}
   - component: {fileID: 943037986339179116}
+  - component: {fileID: 4281800401728007369}
   m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5026317919999490185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2156528723941456582}
@@ -146,6 +147,17 @@ TrailRenderer:
   m_MinVertexDistance: 0
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!210 &4281800401728007369
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026317919999490185}
+  m_Enabled: 1
+  m_SortingLayerID: -1725416859
+  m_SortingLayer: -3
+  m_SortingOrder: 0
 --- !u!1 &9222049426576929246
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +173,7 @@ GameObject:
   - component: {fileID: 6732165996997482033}
   m_Layer: 0
   m_Name: ProjectileIceCream
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,5 +303,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14c9d57129e73641bce522a730af9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10.2
+  speed: 12
   timeToDestroy: 3
