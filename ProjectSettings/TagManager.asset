@@ -8,7 +8,6 @@ TagManager:
   - StairPoint1
   - StairPoint2
   - StairPoint3
-  - Enemy
   - Projectile
   layers:
   - Default
@@ -19,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - Ground
-  - 
+  - House
   - 
   - 
   - 

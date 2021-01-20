@@ -4,20 +4,37 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Rigidbody2D _enemyRb;
+
+    [SerializeField] private Animator _manAnim = default;
+
+    [SerializeField] private GameObject _projectileEnemyPrefab = default;
+    [SerializeField] private Transform _posHandEnemyToShoot = default;
+
     void Start()
     {
-        
+        _enemyRb = GetComponent<Rigidbody2D>();
+        print(_manAnim);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CollisionDetected()
     {
         
+        int ballonCount = GameObject.FindObjectsOfType<Balloon>().Length;
+        if (ballonCount > 1)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
+            _manAnim.SetTrigger("BalloonDamage");
+        }
+        else
+        {
+            _enemyRb.gravityScale = 1.0f;
+            _manAnim.SetTrigger("NoBalloons");
+        }    
     }
 
-    public void CollisionDetected(Baloon baloon)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Balao Colidiu");
+        _manAnim.SetTrigger("OnGround");
     }
 }
