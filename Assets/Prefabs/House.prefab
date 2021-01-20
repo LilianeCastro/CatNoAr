@@ -323,6 +323,9 @@ MonoBehaviour:
   _projectileEnemyPrefab: {fileID: 5665586445537678989, guid: 840bf75a9dcf1a74fb4a17e7e5bb64b1,
     type: 3}
   _posHandEnemyToShoot: {fileID: 251560265519999149}
+  _balloonVfxPrefab: {fileID: 2236660408617138134, guid: feb9b94a0f770b84ca3495960f39d22b,
+    type: 3}
+  _speedEnemyToIncrement: 0.05
 --- !u!50 &2909913315641525990
 Rigidbody2D:
   serializedVersion: 4

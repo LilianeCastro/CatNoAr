@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject _projectileEnemyPrefab = default;
     [SerializeField] private Transform _posHandEnemyToShoot = default;
 
+    public ParticleSystem _balloonVfxPrefab = default;
+
     [SerializeField]
     [Range(0.01f, 0.075f)] private float _speedEnemyToIncrement = 0.05f;
 
