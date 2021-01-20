@@ -8,10 +8,11 @@ using UnityEngine.InputSystem;
     RequireComponent(typeof(Animator))
 ]
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable<int>
 {
     private Rigidbody2D _playerRb;
     private Animator _playerAnim;
+    private Vector3 _initialPositionToRespawn;
 
     private float _horizontalInput;
     private bool _isGrounded = true;
@@ -66,5 +67,10 @@ public class Player : MonoBehaviour
         {
             _playerRb.AddForce(new Vector2(_playerRb.velocity.x, _playerForceJump));
         }
+    }
+
+    public void Damage(int damageTaken)
+    {
+        Debug.Log("Colidiu com Player");
     }
 }

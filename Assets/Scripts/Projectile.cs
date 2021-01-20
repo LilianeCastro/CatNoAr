@@ -10,6 +10,10 @@ public class Projectile : MonoBehaviour
 
     [SerializeField]
     [Range(1, 4)] private float timeToDestroy = 2f;
+    
+    [SerializeField]
+    [Range(1, 4)] private int damageAmount = 1;
+
 
     IEnumerator Start()
     {
@@ -21,5 +25,16 @@ public class Projectile : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.up * speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        IDamageable<int> damageable = other.GetComponent<IDamageable<int>>();
+
+        if (damageable != null)
+        {
+            damageable.Damage(damageAmount);
+            Destroy(this.gameObject);
+        }    
     }
 }

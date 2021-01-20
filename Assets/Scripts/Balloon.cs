@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Balloon : MonoBehaviour
+public class Balloon : MonoBehaviour, IDamageable<int>
 {
     private SpriteRenderer _baloonSr;
 
@@ -13,19 +13,14 @@ public class Balloon : MonoBehaviour
         print(_baloonSr.color);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Projectile"))
-        {
-            transform.parent.GetComponent<Enemy>().CollisionDetected();
-            
-            Destroy(this.gameObject);
-            Destroy(other.gameObject);
-        }
-    }
-
     private float RandomColor()
     {
         return Random.Range(0f, 1.0f);
+    }
+
+    public void Damage(int damageTaken)
+    {
+        transform.parent.GetComponent<Enemy>().CollisionDetected();   
+        Destroy(this.gameObject);        
     }
 }

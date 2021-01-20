@@ -111,8 +111,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7581996, y: 0.000000011515116}
-  m_Size: {x: 1.3273498, y: 3.71875}
+  m_Offset: {x: -1.1564552, y: -0.000000010797882}
+  m_Size: {x: 0.53083825, y: 3.7187498}
   m_Direction: 0
 --- !u!1 &1360715243420425967
 GameObject:
@@ -319,8 +319,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _manAnim: {fileID: 6837442142996938295}
-  _projectileEnemyPrefab: {fileID: 0}
-  _posHandEnemyToShoot: {fileID: 0}
+  _projectileShowSr: {fileID: 4114725793373025595}
+  _projectileEnemyPrefab: {fileID: 5665586445537678989, guid: 840bf75a9dcf1a74fb4a17e7e5bb64b1,
+    type: 3}
+  _posHandEnemyToShoot: {fileID: 251560265519999149}
 --- !u!50 &2909913315641525990
 Rigidbody2D:
   serializedVersion: 4
@@ -745,7 +747,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1725416859
   m_SortingLayer: -3
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 230944820272680618, guid: 0ce52462fa3e6aa4eb10679d6b985a2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -868,8 +870,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07065007, y: 0}
-  m_Size: {x: 1.1481662, y: 3.71875}
+  m_Offset: {x: -0.07527922, y: 0.40345123}
+  m_Size: {x: 0.47860846, y: 2.911847}
   m_Direction: 0
 --- !u!1 &7871145851796949496
 GameObject:
@@ -982,8 +984,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.72021437, y: 0.00000002576105}
-  m_Size: {x: 1.4033384, y: 3.718749}
+  m_Offset: {x: 1.1112355, y: 0.32620737}
+  m_Size: {x: 0.62132686, y: 2.9116573}
   m_Direction: 0
 --- !u!1001 &6689270459149281517
 PrefabInstance:
@@ -1233,6 +1235,18 @@ Transform:
 --- !u!95 &6837442142996938295 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 159430756064909018, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6689270459149281517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &251560265519999149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892944704060997696, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6689270459149281517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4114725793373025595 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7336189264746094038, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
     type: 3}
   m_PrefabInstance: {fileID: 6689270459149281517}
   m_PrefabAsset: {fileID: 0}
