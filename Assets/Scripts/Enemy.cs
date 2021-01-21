@@ -84,10 +84,10 @@ public class Enemy : MonoBehaviour
     public void CollisionDetected()
     {      
         _speedEnemy += _speedEnemyToIncrement;
+        
+        GameController.Instance.ScoreEnemy = -1;
 
-        int ballonCount = GameObject.FindObjectsOfType<Balloon>().Length;
-
-        if (ballonCount > 1)
+        if (GameController.Instance.ScoreEnemy > 0)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
             _manAnim.SetTrigger("BalloonDamage");

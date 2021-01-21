@@ -10,7 +10,6 @@ public class Balloon : MonoBehaviour, IDamageable<int>
     {
         _baloonSr = GetComponent<SpriteRenderer>();
         _baloonSr.color = new Color(RandomColor(), RandomColor(), RandomColor());
-        print(_baloonSr.color);
     }
 
     private float RandomColor()
@@ -21,8 +20,7 @@ public class Balloon : MonoBehaviour, IDamageable<int>
     public void Damage(int damageTaken)
     {
         transform.parent.GetComponent<Enemy>().CollisionDetected();
-        print(transform.parent.GetComponent<Enemy>()._balloonVfxPrefab);
-
+        
         ParticleSystem.MainModule part = transform.parent.GetComponent<Enemy>()._balloonVfxPrefab.main;
         part.startColor = new Color(_baloonSr.color.r, _baloonSr.color.g, _baloonSr.color.b, 0.75f);
 
