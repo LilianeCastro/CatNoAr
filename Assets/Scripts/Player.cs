@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
     RequireComponent(typeof(Animator))
 ]
 
-public class Player : MonoBehaviour, IDamageable<int>
+public class Player : Singleton<Player>, IDamageable
 {
     private Rigidbody2D _playerRb;
     private Animator _playerAnim;
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour, IDamageable<int>
     public float _playerSpeed;
     public float _playerForceJump;
     
-    private void Awake()
+    public override void Init()
     {
         _playerRb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<Animator>();
@@ -69,8 +69,8 @@ public class Player : MonoBehaviour, IDamageable<int>
         }
     }
 
-    public void Damage(int damageTaken)
+    public void Damage()
     {
-        Debug.Log("Colidiu com Player");
+        GameController.Instance.ScorePlayer = -1;
     }
 }

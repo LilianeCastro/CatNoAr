@@ -407,7 +407,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 741795362218544886, guid: 3c76f68314a1d214abf76e29921474ab, type: 3}
+  m_Sprite: {fileID: 4115889374984871806, guid: 3c76f68314a1d214abf76e29921474ab,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -715,7 +716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.672588, y: 4.867646, z: -10.5}
+  m_LocalPosition: {x: 0.67258835, y: 4.867646, z: -10.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1892513217}
@@ -1346,7 +1347,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 741795362218544886, guid: 3c76f68314a1d214abf76e29921474ab, type: 3}
+  m_Sprite: {fileID: 4115889374984871806, guid: 3c76f68314a1d214abf76e29921474ab,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1627,6 +1629,7 @@ MonoBehaviour:
   _imgScorePlayer: {fileID: 1907404642}
   _imgScoreEnemy: {fileID: 2030274759}
   _numberScore:
+  - {fileID: 1860136362087212281, guid: 87eb83d564ea1c94b851f14bff6937f6, type: 3}
   - {fileID: 1860136362087212281, guid: d15fcea950748e149800e940f6b1fbf8, type: 3}
   - {fileID: 5053866756131690614, guid: bf3dfb76193f08a4b833570657182ab7, type: 3}
   - {fileID: 651802369225077136, guid: e143cbd500f873e4896dd4f2639c4793, type: 3}
@@ -1900,8 +1903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5618094748022034984, guid: 3c76f68314a1d214abf76e29921474ab,
-    type: 3}
+  m_Sprite: {fileID: 741795362218544886, guid: 3c76f68314a1d214abf76e29921474ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2150,7 +2152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2835923549064184301, guid: 3c76f68314a1d214abf76e29921474ab,
+  m_Sprite: {fileID: 9096961371022783241, guid: 3c76f68314a1d214abf76e29921474ab,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

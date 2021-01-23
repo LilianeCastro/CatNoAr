@@ -10,7 +10,7 @@ public class GameController : Singleton<GameController>
     [SerializeField] private Image _imgScoreEnemy = default;
     [SerializeField] private Image[] _numberScore = default;
 
-    private int _scorePlayer;
+    private int _scorePlayer = 7;
 
     public int ScorePlayer {
         get
@@ -20,6 +20,7 @@ public class GameController : Singleton<GameController>
         set
         {
             _scorePlayer += value;
+            _imgScorePlayer.sprite = _numberScore[_scorePlayer].sprite;
         }
     }
     private int _scoreEnemy = 3;
@@ -30,8 +31,9 @@ public class GameController : Singleton<GameController>
             return _scoreEnemy;
         }
         set 
-        {
+        { 
             _scoreEnemy += value;
+            _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite; 
         }
     }
 
@@ -39,5 +41,4 @@ public class GameController : Singleton<GameController>
     {
         print("Game");
     }
-
 }

@@ -6,34 +6,63 @@ using System;
 public class Projectile : MonoBehaviour
 { 
     [SerializeField]
-    [Range(1, 20)] private float speed = 4f;
+    [Range(1, 20)] private float _speed = 4f;
 
     [SerializeField]
-    [Range(1, 4)] private float timeToDestroy = 2f;
+    [Range(1, 6)] private float _timeToDestroy = 2f;
+
+    [SerializeField] private bool _isProjectileEnemy;
     
-    [SerializeField]
-    [Range(1, 4)] private int damageAmount = 1;
-
+    private Vector3 _target;
 
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(timeToDestroy);
+        if (_isProjectileEnemy)
+        {
+            _target = Player.Instance.transform.position;
+            StartCoroutine(ProjectileEnemy());
+        }
+        else
+        {
+            StartCoroutine(ProjectilePlayer());
+        }
+
+        yield return new WaitForSeconds(_timeToDestroy);
 
         Destroy(this.gameObject);
     }
-    
-    private void Update()
+
+    IEnumerator ProjectileEnemy()
     {
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+        yield return new WaitForEndOfFrame();
+
+        transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
+        transform.up = _target - transform.position;
+
+        if(Vector2.Distance(_target, transform.position) <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+        StartCoroutine(ProjectileEnemy());
+    }
+
+    IEnumerator ProjectilePlayer()
+    {
+        yield return new WaitForEndOfFrame();
+
+        transform.Translate(Vector3.up * _speed * Time.deltaTime);
+
+        StartCoroutine(ProjectilePlayer());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        IDamageable<int> damageable = other.GetComponent<IDamageable<int>>();
+        IDamageable damageable = other.GetComponent<IDamageable>();
 
         if (damageable != null)
         {
-            damageable.Damage(damageAmount);
+            damageable.Damage();
             Destroy(this.gameObject);
         }    
     }

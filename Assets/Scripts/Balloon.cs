@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Balloon : MonoBehaviour, IDamageable<int>
+public class Balloon : MonoBehaviour, IDamageable
 {
     private SpriteRenderer _baloonSr;
 
@@ -17,15 +17,16 @@ public class Balloon : MonoBehaviour, IDamageable<int>
         return Random.Range(0f, 1.0f);
     }
 
-    public void Damage(int damageTaken)
+    public void Damage()
     {
         transform.parent.GetComponent<Enemy>().CollisionDetected();
         
         ParticleSystem.MainModule part = transform.parent.GetComponent<Enemy>()._balloonVfxPrefab.main;
         part.startColor = new Color(_baloonSr.color.r, _baloonSr.color.g, _baloonSr.color.b, 0.75f);
 
-        Instantiate(transform.parent.GetComponent<Enemy>()._balloonVfxPrefab, transform.position, transform.rotation);
+        ParticleSystem vfx = Instantiate(transform.parent.GetComponent<Enemy>()._balloonVfxPrefab, transform.position, transform.rotation);
 
-        Destroy(this.gameObject);        
+        Destroy(this.gameObject);
+        Destroy(vfx, 2f);
     }
 }

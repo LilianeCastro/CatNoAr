@@ -323,9 +323,9 @@ MonoBehaviour:
   _projectileEnemyPrefab: {fileID: 5665586445537678989, guid: 840bf75a9dcf1a74fb4a17e7e5bb64b1,
     type: 3}
   _posHandEnemyToShoot: {fileID: 251560265519999149}
+  _speedEnemyToIncrement: 0.05
   _balloonVfxPrefab: {fileID: 2236660408617138134, guid: feb9b94a0f770b84ca3495960f39d22b,
     type: 3}
-  _speedEnemyToIncrement: 0.05
 --- !u!50 &2909913315641525990
 Rigidbody2D:
   serializedVersion: 4
@@ -987,8 +987,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1112355, y: 0.32620737}
-  m_Size: {x: 0.62132686, y: 2.9116573}
+  m_Offset: {x: 0.6941212, y: 0.22836225}
+  m_Size: {x: 0.4987055, y: 3.1073422}
   m_Direction: 0
 --- !u!1001 &6689270459149281517
 PrefabInstance:
@@ -1127,6 +1127,11 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.y
       value: 0.27458006
       objectReference: {fileID: 0}
+    - target: {fileID: 2624562737764091559, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61
+      objectReference: {fileID: 0}
     - target: {fileID: 3058323550725210540, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
         type: 3}
       propertyPath: m_Name
@@ -1222,12 +1227,19 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.y
       value: 0.5439548
       objectReference: {fileID: 0}
+    - target: {fileID: 7072317819470244710, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8345695412406958927, guid: 22411d2aaa5fd7b4686407a4d82f3b9c,
         type: 3}
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 67317825810276988, guid: 22411d2aaa5fd7b4686407a4d82f3b9c, type: 3}
+    - {fileID: 4446196043084497768, guid: 22411d2aaa5fd7b4686407a4d82f3b9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 22411d2aaa5fd7b4686407a4d82f3b9c, type: 3}
 --- !u!4 &5357597093851383710 stripped
 Transform:
