@@ -10,10 +10,6 @@ public class GameController : Singleton<GameController>
     [SerializeField] private Image _imgScoreEnemy = default;
     [SerializeField] private Image[] _numberScore = default;
 
-    [Header("Progress to Shoot")]
-    [SerializeField] private Slider _progressReadyIceCream = default;
-    [SerializeField] private Slider _progressReadyOrb = default;
-
     private int _scorePlayer;
 
     public int ScorePlayer {
