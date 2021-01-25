@@ -95,7 +95,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 501
-      y: 1805
+      y: 3688
       width: 229
       height: 194
     spriteID: 23aef9ff7b8024a4281eea3735ee06a4
@@ -108,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -382, y: 229}
+    uvTransform: {x: -382, y: 2112}
   - name: chocolate
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -117,7 +117,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1805
+      y: 3688
       width: 489
       height: 212
     spriteID: d640c850a8a63784984d68f49fbf2f43
@@ -130,7 +130,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -664, y: 536}
+    uvTransform: {x: -664, y: 2419}
   - name: sorvete
     originalName: 
     pivot: {x: 0.4231628, y: 0.1567021}
@@ -138,8 +138,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1215
-      y: 4
+      x: 1784
+      y: 1805
       width: 495
       height: 645
     spriteID: a7a628aa809e9a842a3c7554afa6cb62
@@ -152,7 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 553, y: -1265}
+    uvTransform: {x: 1122, y: 536}
   - name: balao
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -160,8 +160,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 738
-      y: 1805
+      x: 872
+      y: 3688
       width: 94
       height: 238
     spriteID: 9598442a762bd4c4ca3b36dcadf3f46b
@@ -174,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -440, y: 580}
+    uvTransform: {x: -306, y: 2463}
   - name: ground
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 1784
       y: 4
       width: 1203
       height: 1793
@@ -196,7 +196,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -215, y: -354}
+    uvTransform: {x: 1565, y: -354}
   - name: doce
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,8 +204,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1215
-      y: 657
+      x: 738
+      y: 3688
       width: 126
       height: 261
     spriteID: 6db42ad032a506549acf94ee54880459
@@ -218,7 +218,73 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 57, y: -306}
+    uvTransform: {x: -420, y: 2725}
+  - name: feedback
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2163
+      width: 1516
+      height: 1517
+    spriteID: eab30d4ff22f0334083ebb51928c9cb2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -103, y: 1836}
+  - name: feedbackIcon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2287
+      y: 1805
+      width: 499
+      height: 497
+    spriteID: 57d45dc447c2f5c4687928ba15ae0c0b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1712, y: 950}
+  - name: Camada 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1772
+      height: 2151
+    spriteID: dc2d3e69e352b3b458d7d1581c9e0011
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -231,55 +297,76 @@ ScriptedImporter:
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 2048
+  textureActualWidth: 4096
+  textureActualHeight: 4096
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: feedbackIcon
+    spriteName: feedbackIcon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 57d45dc447c2f5c4687928ba15ae0c0b
+    layerID: 17
+    mosaicPosition: {x: 2287, y: 1805}
+  - name: feedback
+    spriteName: feedback
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eab30d4ff22f0334083ebb51928c9cb2
+    layerID: 14
+    mosaicPosition: {x: 4, y: 2163}
+  - name: Camada 1
+    spriteName: Camada 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dc2d3e69e352b3b458d7d1581c9e0011
+    layerID: 13
+    mosaicPosition: {x: 4, y: 4}
   - name: bola sorvete
     spriteName: bola sorvete
     isGroup: 0
     parentIndex: -1
     spriteID: 23aef9ff7b8024a4281eea3735ee06a4
     layerID: 10
-    mosaicPosition: {x: 501, y: 1805}
+    mosaicPosition: {x: 501, y: 3688}
   - name: chocolate
     spriteName: chocolate
     isGroup: 0
     parentIndex: -1
     spriteID: d640c850a8a63784984d68f49fbf2f43
     layerID: 4
-    mosaicPosition: {x: 4, y: 1805}
+    mosaicPosition: {x: 4, y: 3688}
   - name: sorvete
     spriteName: sorvete
     isGroup: 0
     parentIndex: -1
     spriteID: a7a628aa809e9a842a3c7554afa6cb62
     layerID: 6
-    mosaicPosition: {x: 1215, y: 4}
+    mosaicPosition: {x: 1784, y: 1805}
   - name: balao
     spriteName: balao
     isGroup: 0
     parentIndex: -1
     spriteID: 9598442a762bd4c4ca3b36dcadf3f46b
     layerID: 9
-    mosaicPosition: {x: 738, y: 1805}
+    mosaicPosition: {x: 872, y: 3688}
   - name: doce
     spriteName: doce
     isGroup: 0
     parentIndex: -1
     spriteID: 6db42ad032a506549acf94ee54880459
     layerID: 11
-    mosaicPosition: {x: 1215, y: 657}
+    mosaicPosition: {x: 738, y: 3688}
   - name: ground
     spriteName: ground
     isGroup: 0
     parentIndex: -1
     spriteID: 566f0775c0fd41a4dbc1d6d503075c1a
     layerID: 5
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 1784, y: 4}
   characterData:
     bones: []
     parts: []

@@ -203,6 +203,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1991896524015597451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &80493424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5415189957530442885, guid: 646c804ba9f64cd44ad1446e3c89ec7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1363427767870445932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636e079d3e59d4146b100e3ea4c93720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &148574100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1638,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b811657319026174aa62e42b740718f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _iceCreamShooter: {fileID: 1741285451}
+  _orbShooter: {fileID: 80493424}
+  _shooterRecovery: {fileID: 2322552837254672272, guid: 5b8b785766e73b547adf49cbb1792f3d,
+    type: 3}
   _imgScorePlayer: {fileID: 1907404642}
   _imgScoreEnemy: {fileID: 2030274759}
   _numberScore:
@@ -1645,7 +1661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454037734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1762,6 +1778,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741285451 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1219400006, guid: 94b778423274ead4a8be630c6789d39a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6572654317403099312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636e079d3e59d4146b100e3ea4c93720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892513216
 GameObject:
   m_ObjectHideFlags: 3
@@ -2305,6 +2333,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2743374359313690912, guid: 646c804ba9f64cd44ad1446e3c89ec7f,
+        type: 3}
+      propertyPath: m_Name
+      value: feedbackFogo
+      objectReference: {fileID: 0}
     - target: {fileID: 7947308224489368990, guid: 646c804ba9f64cd44ad1446e3c89ec7f,
         type: 3}
       propertyPath: m_Name
@@ -2479,6 +2512,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1449335771, guid: 94b778423274ead4a8be630c6789d39a, type: 3}
+      propertyPath: m_LinearOffset.x
+      value: 12.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449335771, guid: 94b778423274ead4a8be630c6789d39a, type: 3}
+      propertyPath: m_LinearOffset.y
+      value: 11.24
+      objectReference: {fileID: 0}
     - target: {fileID: 5551192811961572038, guid: 94b778423274ead4a8be630c6789d39a,
         type: 3}
       propertyPath: m_Name

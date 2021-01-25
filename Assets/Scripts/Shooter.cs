@@ -8,10 +8,11 @@ public class Shooter : MonoBehaviour
     private Control _control;
     private Camera _camera;
 
-    private bool _canShoot = true;
+    private bool _canShoot = false;
     private bool _playerInAreaToShoot = false;
 
-    public Transform _directionToShoot;
+    [SerializeField] private GameObject _feedbackShootIsReady = default;
+    [SerializeField] public Transform _directionToShoot = default;
     public GameObject _projectile;
 
     private Quaternion _initialRotation;
@@ -51,6 +52,8 @@ public class Shooter : MonoBehaviour
     {
         if (!_playerInAreaToShoot) { return ; }
 
+        if (!_canShoot) { return ; }
+
         Vector2 mouseScreenPosition = _control.Gameplay.MousePosition.ReadValue<Vector2>();
         Vector3 mouseWorldPosition = _camera.ScreenToWorldPoint(mouseScreenPosition);
         Vector3 targetDirection = mouseWorldPosition - transform.position;
@@ -60,27 +63,33 @@ public class Shooter : MonoBehaviour
         if ( currentAngle > _angleMinToRotation && currentAngle < _angleMaxToRotation)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, currentAngle));
-        }
-            
+        }        
     }
 
     private void Shoot()
     {
         if (!_canShoot || !_playerInAreaToShoot) { return ;}
 
-        _canShoot = false;
-        
+        SetCanShoot(false);
         Instantiate(_projectile, _directionToShoot.position, _directionToShoot.rotation);
         
-        StartCoroutine(DelayShoot());
+        GameController.Instance.SpawnShootRecovery();
+        //StartCoroutine(DelayShoot());
     }
 
-    private IEnumerator DelayShoot()
+    /*private IEnumerator DelayShoot()
     {
         float delayShoot = UnityEngine.Random.Range(_minDelayShoot, _maxDelayShoot);
 
         yield return new WaitForSeconds(delayShoot);
-        _canShoot = true;
+
+        SetCanShoot(true);
+    }*/
+
+    public void SetCanShoot(bool value)
+    {
+        _canShoot = value;
+        _feedbackShootIsReady.SetActive(_canShoot);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
