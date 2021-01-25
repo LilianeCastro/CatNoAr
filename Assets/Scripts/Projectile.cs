@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     [Range(1, 6)] private float _timeToDestroy = 2f;
 
-    [SerializeField] private bool _isProjectileEnemy;
+    [SerializeField] private bool _isProjectileEnemy = false;
     
     private Vector3 _target;
 

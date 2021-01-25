@@ -33,11 +33,22 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(_delayAttack);
         
-        print(Vector2.Distance(this.transform.position, Player.Instance.transform.position));
-
         if (_canMove) {
-            _manAnim.SetInteger("PlayerSide", 0);
-            Instantiate(_projectileEnemyPrefab, _posHandEnemyToShoot.position, _posHandEnemyToShoot.rotation);
+            _projectileShowSr.color = Color.clear;
+            if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) >= 7.5f)
+            {
+                _manAnim.SetInteger("PlayerSide", 1);
+            }
+            else if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) <= 6.5f)
+            {
+                _manAnim.SetInteger("PlayerSide", -1);
+            }
+            else
+            {
+                _manAnim.SetInteger("PlayerSide", 0);
+            }
+            
+            Instantiate(_projectileEnemyPrefab, _posHandEnemyToShoot.position, _projectileEnemyPrefab.transform.rotation);
 
             StartCoroutine(AttackEnemy());
         }
@@ -48,11 +59,13 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         _manAnim.SetInteger("PlayerSide", -2);
+        yield return new WaitForSeconds(0.4f);
+        _projectileShowSr.color = Color.white;
     }
 
     IEnumerator MoveToRight()
     {
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForFixedUpdate();
         
         if (_canMove) {
             if (transform.position.x <= 8f)
@@ -74,7 +87,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator MoveToLeft()
     {    
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForFixedUpdate();
 
         if (_canMove)
         {
