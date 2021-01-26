@@ -850,7 +850,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 762326805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2002798147}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &435505853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,15 +2048,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2002798146}
-        m_MethodName: PlayAgain
-        m_Mode: 1
+      - m_Target: {fileID: 2002798147}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: InGame
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1184081143
@@ -2809,6 +2820,7 @@ GameObject:
   - component: {fileID: 2002798143}
   - component: {fileID: 2002798142}
   - component: {fileID: 2002798146}
+  - component: {fileID: 2002798147}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2914,6 +2926,18 @@ MonoBehaviour:
   _panelVictory: {fileID: 729623128}
   _panelDefeat: {fileID: 189401392}
   _timeElapsed: {fileID: 1971604541}
+--- !u!114 &2002798147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002798141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a32ef701f0223a4f872826aa24ed47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2030274757
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,14 +44,4 @@ public class CanvasController : MonoBehaviour
         _panelGameOver.SetActive(true);
         _panelDefeat.SetActive(true);
     }
-
-    public void PlayAgain()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-    }
-
-    public void Menu()
-    {
-
-    }
 }

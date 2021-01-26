@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5157676352326915781}
   m_Layer: 0
   m_Name: balao1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 6843722836845917809}
   m_Layer: 0
   m_Name: balao2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 3678669404637090767}
   m_Layer: 0
   m_Name: balao3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -987,8 +987,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6941212, y: 0.22836225}
-  m_Size: {x: 0.4987055, y: 3.1073422}
+  m_Offset: {x: 0.69412255, y: 0.36321604}
+  m_Size: {x: 0.49870777, y: 3.1398435}
   m_Direction: 0
 --- !u!1001 &6689270459149281517
 PrefabInstance:

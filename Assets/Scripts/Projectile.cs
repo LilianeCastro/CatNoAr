@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     [Range(1, 20)] private float _speed = 4f;
 
     [SerializeField]
-    [Range(1, 6)] private float _timeToDestroy = 2f;
+    [Range(1, 8)] private float _timeToDestroy = 2f;
 
     [SerializeField] private bool _isProjectileEnemy = false;
     
@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     {
         if (_isProjectileEnemy)
         {
-            _target = Player.Instance.transform.position;
+            _target = Player.Instance._bodyToAttackTarget.position;
             StartCoroutine(ProjectileEnemy());
         }
         else
@@ -60,6 +60,10 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
+
+        if (!_isProjectileEnemy && other.gameObject.CompareTag("Player")) { return ; }
+
+        if (_isProjectileEnemy && other.gameObject.CompareTag("Enemy")) { return ; }
 
         if (damageable != null)
         {

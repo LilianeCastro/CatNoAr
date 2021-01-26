@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731a7a30ac51cc74db6fbf7d76740699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bodyToAttackTarget: {fileID: 2764616467354393486}
   _groundCheckLeft: {fileID: 986051664771242422}
   _groundCheckRight: {fileID: 2608011063408956454}
   _distance: 1
@@ -599,8 +600,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7}
-  m_Size: {x: 0.9, y: 0.7}
+  m_Offset: {x: -0.026314376, y: 0.78771496}
+  m_Size: {x: 0.95263106, y: 0.87543595}
   m_Direction: 1
 --- !u!210 &7153586673352414526
 SortingGroup:

@@ -18,6 +18,7 @@ public class Player : Singleton<Player>, IDamageable
     private bool _isGrounded = true;
     private bool _isLookLeft = false;
 
+    public Transform _bodyToAttackTarget;
     public Transform _groundCheckLeft;
     public Transform _groundCheckRight;
     public float _distance;
@@ -29,6 +30,10 @@ public class Player : Singleton<Player>, IDamageable
     {
         _playerRb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<Animator>();
+
+        if (GameManager.Instance == null) { return ; }
+        
+        GameManager.Instance.FirstTime = false;
     }
 
     private void FixedUpdate()
@@ -77,7 +82,14 @@ public class Player : Singleton<Player>, IDamageable
 
     public void Damage()
     {
+        if (GameController.Instance.GameOver) { return ; }
+        
         GameController.Instance.ScorePlayer = -1;
+
+        if (GameController.Instance.GameOver)
+        {
+            _playerAnim.SetInteger("Speed", 0);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

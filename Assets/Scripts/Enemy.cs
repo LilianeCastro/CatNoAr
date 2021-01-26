@@ -111,7 +111,9 @@ public class Enemy : MonoBehaviour
     }
 
     public void CollisionDetected()
-    {      
+    {  
+        if (GameController.Instance.GameOver) { return ; }
+            
         _speedEnemy += _speedEnemyToIncrement;
         
         GameController.Instance.ScoreEnemy = -1;
