@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameController : Singleton<GameController>
 {
+    [SerializeField] private CanvasController _canvasController;
+
     [Header("Shooter")]
     [SerializeField] private Shooter _iceCreamShooter = default;
     [SerializeField] private Shooter _orbShooter = default;
@@ -34,6 +36,7 @@ public class GameController : Singleton<GameController>
             if (_scorePlayer <= 0)
             {
                 _gameOver = true;
+                _canvasController.SetGameOverDefeatActive();
             }
         }
     }
@@ -48,14 +51,16 @@ public class GameController : Singleton<GameController>
         { 
             _scoreEnemy += value;
             _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite;
+
             if (_scoreEnemy <= 0)
             {
                 _gameOver = true;
 
                 string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
+                _canvasController.SetGameOverVictoryActive(score);
 
-                PlayerPrefs.SetString("highscore", score);
-                print("Game Over" + score);
+                PlayerPrefs.SetFloat("minutes", _minutes);
+                PlayerPrefs.SetFloat("seconds", _seconds);
             }
         }
     }
@@ -94,6 +99,7 @@ public class GameController : Singleton<GameController>
 
     private void Update()
     {
+        if (_gameOver) { return ; }
         _timeRemaining += Time.deltaTime;
 
         _minutes = Mathf.FloorToInt(_timeRemaining / 60); 

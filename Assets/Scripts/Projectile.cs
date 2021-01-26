@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private bool _isProjectileEnemy = false;
     
+    [SerializeField] private GameObject _particleSystem;
     private Vector3 _target;
 
     IEnumerator Start()
@@ -29,7 +30,7 @@ public class Projectile : MonoBehaviour
 
         yield return new WaitForSeconds(_timeToDestroy);
 
-        Destroy(this.gameObject);
+        DestroyGameObject();
     }
 
     IEnumerator ProjectileEnemy()
@@ -41,7 +42,7 @@ public class Projectile : MonoBehaviour
 
         if(Vector2.Distance(_target, transform.position) <= 0)
         {
-            Destroy(this.gameObject);
+            DestroyGameObject();
         }
 
         StartCoroutine(ProjectileEnemy());
@@ -63,7 +64,13 @@ public class Projectile : MonoBehaviour
         if (damageable != null)
         {
             damageable.Damage();
-            Destroy(this.gameObject);
+            DestroyGameObject();
         }    
+    }
+
+    private void DestroyGameObject()
+    {
+        Destroy(_particleSystem.gameObject);
+        Destroy(this.gameObject);
     }
 }
