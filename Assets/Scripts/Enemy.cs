@@ -15,11 +15,10 @@ public class Enemy : MonoBehaviour
 
     private float _delayAttack = 4.0f;
     private float _speedEnemy = 0.05f;
-    private bool _canMove = true;
 
     public ParticleSystem _balloonVfxPrefab = default;
 
-    void Start()
+    private void Start()
     {
         _enemyRb = GetComponent<Rigidbody2D>();
         
@@ -33,7 +32,8 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(_delayAttack);
         
-        if (_canMove) {
+        if (!GameController.Instance.GameOver) 
+        {
             _projectileShowSr.color = Color.clear;
             if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) >= 7.5f)
             {
@@ -59,6 +59,7 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         _manAnim.SetInteger("PlayerSide", -2);
+        
         yield return new WaitForSeconds(0.4f);
         _projectileShowSr.color = Color.white;
     }
@@ -67,7 +68,8 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         
-        if (_canMove) {
+        if (!GameController.Instance.GameOver) 
+        {
             if (transform.position.x <= 8f)
             {
                 transform.position = Vector3.Lerp (transform.position, new Vector3(transform.position.x + _speedEnemy, transform.position.y), 0.5f);
@@ -89,7 +91,7 @@ public class Enemy : MonoBehaviour
     {    
         yield return new WaitForFixedUpdate();
 
-        if (_canMove)
+        if (!GameController.Instance.GameOver)
         {
             if (transform.position.x >= 0f)
             {
@@ -120,9 +122,7 @@ public class Enemy : MonoBehaviour
             _manAnim.SetTrigger("BalloonDamage");
         }
         else
-        {
-            _canMove = false;
-            
+        {   
             _enemyRb.gravityScale = 1.0f;
             _manAnim.SetTrigger("NoBalloons");
         }    

@@ -17,11 +17,6 @@ public class Shooter : MonoBehaviour
 
     private Quaternion _initialRotation;
 
-    [SerializeField]
-    [Range(0.5f, 2.0f)]private float _minDelayShoot = 0.5f;
-    [SerializeField]
-    [Range(2.1f, 5.0f)]private float _maxDelayShoot = 5.0f;
-
     [SerializeField] private float _angleMinToRotation = -60.0f;
     [SerializeField] private float _angleMaxToRotation = 30.0f;
 
@@ -74,17 +69,7 @@ public class Shooter : MonoBehaviour
         Instantiate(_projectile, _directionToShoot.position, _directionToShoot.rotation);
         
         GameController.Instance.SpawnShootRecovery();
-        //StartCoroutine(DelayShoot());
     }
-
-    /*private IEnumerator DelayShoot()
-    {
-        float delayShoot = UnityEngine.Random.Range(_minDelayShoot, _maxDelayShoot);
-
-        yield return new WaitForSeconds(delayShoot);
-
-        SetCanShoot(true);
-    }*/
 
     public void SetCanShoot(bool value)
     {

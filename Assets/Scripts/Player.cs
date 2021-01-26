@@ -33,6 +33,8 @@ public class Player : Singleton<Player>, IDamageable
 
     private void FixedUpdate()
     {
+        if (GameController.Instance.GameOver) { return; }
+
         _playerRb.velocity = new Vector2(_horizontalInput * _playerSpeed, _playerRb.velocity.y);
         
         _isGrounded = Physics2D.Raycast(_groundCheckLeft.position, Vector2.down, _distance, 1 << LayerMask.NameToLayer("Ground"))
@@ -41,6 +43,8 @@ public class Player : Singleton<Player>, IDamageable
 
     private void OnMove(InputValue value)
     {
+        if (GameController.Instance.GameOver) { return; }
+
         _horizontalInput = value.Get<Vector2>().x;
 
         if (_isLookLeft && _horizontalInput > 0)
@@ -63,6 +67,8 @@ public class Player : Singleton<Player>, IDamageable
 
     private void OnJump(InputValue value)
     {
+        if (GameController.Instance.GameOver) { return; }
+
         if(value.isPressed && _isGrounded)
         {
             _playerRb.AddForce(new Vector2(_playerRb.velocity.x, _playerForceJump));
@@ -72,5 +78,14 @@ public class Player : Singleton<Player>, IDamageable
     public void Damage()
     {
         GameController.Instance.ScorePlayer = -1;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Deadline"))
+        {
+            transform.position = _initialPositionToRespawn;
+            Damage();
+        }
     }
 }

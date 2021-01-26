@@ -16,6 +16,11 @@ public class GameController : Singleton<GameController>
     [SerializeField] private Image _imgScoreEnemy = default;
     [SerializeField] private Image[] _numberScore = default;
 
+    [SerializeField] private Text _timer;
+    private float _minutes;
+    private float _seconds;
+    private float _timeRemaining = 0;
+
     private int _scorePlayer = 7;
     public int ScorePlayer {
         get
@@ -26,6 +31,10 @@ public class GameController : Singleton<GameController>
         {
             _scorePlayer += value;
             _imgScorePlayer.sprite = _numberScore[_scorePlayer].sprite;
+            if (_scorePlayer <= 0)
+            {
+                _gameOver = true;
+            }
         }
     }
 
@@ -38,7 +47,25 @@ public class GameController : Singleton<GameController>
         set 
         { 
             _scoreEnemy += value;
-            _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite; 
+            _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite;
+            if (_scoreEnemy <= 0)
+            {
+                _gameOver = true;
+
+                string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
+
+                PlayerPrefs.SetString("highscore", score);
+                print("Game Over" + score);
+            }
+        }
+    }
+
+    private bool _gameOver = false;
+    public bool GameOver
+    {
+        get
+        {
+            return _gameOver;
         }
     }
 
@@ -63,5 +90,15 @@ public class GameController : Singleton<GameController>
         {
             _orbShooter.SetCanShoot(true);
         }
+    }
+
+    private void Update()
+    {
+        _timeRemaining += Time.deltaTime;
+
+        _minutes = Mathf.FloorToInt(_timeRemaining / 60); 
+        _seconds = Mathf.FloorToInt(_timeRemaining % 60);
+
+        _timer.text = string.Format("{0:00}:{1:00}", _minutes, _seconds);
     }
 }
