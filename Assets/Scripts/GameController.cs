@@ -75,7 +75,7 @@ public class GameController : Singleton<GameController>
 
     public override void Init()
     {
-        ChooseRandonShooter();
+        //ChooseRandonShooter();
     }
 
     public void SpawnShootRecovery()

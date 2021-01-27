@@ -8,17 +8,37 @@ public class Shooter : MonoBehaviour
     private Control _control;
     private Camera _camera;
 
-    private bool _canShoot = false;
-    private bool _playerInAreaToShoot = false;
-
     [SerializeField] private GameObject _feedbackShootIsReady = default;
     [SerializeField] public Transform _directionToShoot = default;
     public GameObject _projectile;
 
-    private Quaternion _initialRotation;
-
     [SerializeField] private float _angleMinToRotation = -60.0f;
     [SerializeField] private float _angleMaxToRotation = 30.0f;
+
+    private bool _canShoot = false;
+    private bool _playerInAreaToShoot = false;
+
+    public bool PlayerInAreaToShoot
+    {
+        get
+        {
+            return _playerInAreaToShoot;
+        }
+        set
+        {
+            _playerInAreaToShoot = value;
+        }
+    }
+
+    private Quaternion _initialRotation;
+
+    public Quaternion InitialRotation
+    {
+        get
+        {
+            return _initialRotation;
+        }
+    }
 
 
     private void Awake()
@@ -75,22 +95,5 @@ public class Shooter : MonoBehaviour
     {
         _canShoot = value;
         _feedbackShootIsReady.SetActive(_canShoot);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            _playerInAreaToShoot = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            _playerInAreaToShoot = false;
-            transform.rotation = Quaternion.Euler(_initialRotation.x, _initialRotation.y, _initialRotation.z);
-        }
     }
 }

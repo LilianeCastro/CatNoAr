@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager>
     private float _minutes;
     private float _seconds;
     private string _highscore;
+    private bool _isNewHighScore;
 
     private float Minutes
     {
@@ -35,7 +36,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private string Highscore
+    public string Highscore
     {
         get
         {
@@ -45,6 +46,14 @@ public class GameManager : Singleton<GameManager>
         {
             _highscore = value;
             PlayerPrefs.SetString("hi-score", _highscore);
+        }
+    }
+
+    public bool IsNewHighScore
+    {
+        get
+        {
+            return _isNewHighScore;
         }
     }
 
@@ -62,12 +71,19 @@ public class GameManager : Singleton<GameManager>
 
     public void UpdateScore(float newMinutes, float newSeconds)
     {
-        if (newMinutes <= Minutes)
+        string[] highscore = Highscore.Split(':');
+
+        if (newMinutes <= float.Parse(highscore[0]))
         {
-            if (newSeconds < Seconds)
+            if (newSeconds < float.Parse(highscore[1]))
             {
+                _isNewHighScore = true;
                 string score = string.Format("{0:00}:{1:00}", newMinutes, newSeconds);
-                Highscore = score;
+                Highscore = score;                
+            }
+            else
+            {
+                _isNewHighScore = false;
             }
         }
 
