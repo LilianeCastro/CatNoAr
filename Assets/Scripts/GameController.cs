@@ -54,13 +54,12 @@ public class GameController : Singleton<GameController>
 
             if (_scoreEnemy <= 0)
             {
+                GameManager.Instance.UpdateScore(_minutes, _seconds);
+                
                 _gameOver = true;
 
                 string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
-                _canvasController.SetGameOverVictoryActive(score);
-
-                PlayerPrefs.SetFloat("minutes", _minutes);
-                PlayerPrefs.SetFloat("seconds", _seconds);
+                _canvasController.SetGameOverVictoryActive(score);    
             }
         }
     }

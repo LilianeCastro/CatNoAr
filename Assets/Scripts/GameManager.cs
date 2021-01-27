@@ -7,7 +7,7 @@ public class GameManager : Singleton<GameManager>
 {
     private float _minutes;
     private float _seconds;
-    private bool _isThisFirstTime;
+    private string _highscore;
 
     private float Minutes
     {
@@ -35,16 +35,16 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public bool FirstTime
+    private string Highscore
     {
         get
         {
-            return PlayerPrefs.GetInt("firstTime") == 0 ? false : true;
+            return PlayerPrefs.GetString("hi-score");
         }
         set
         {
-            _isThisFirstTime = value;
-            PlayerPrefs.SetInt("firstTime", 0);
+            _highscore = value;
+            PlayerPrefs.SetString("hi-score", _highscore);
         }
     }
 
@@ -52,6 +52,11 @@ public class GameManager : Singleton<GameManager>
     {
         DontDestroyOnLoad(this.gameObject);
 
+        //ResetValues();
+        _minutes = Minutes;
+        _seconds = Seconds;
+        _highscore = Highscore;
+        
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
@@ -61,8 +66,8 @@ public class GameManager : Singleton<GameManager>
         {
             if (newSeconds < Seconds)
             {
-                string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
-                PlayerPrefs.SetString("hiscore", score);
+                string score = string.Format("{0:00}:{1:00}", newMinutes, newSeconds);
+                Highscore = score;
             }
         }
 
@@ -70,15 +75,20 @@ public class GameManager : Singleton<GameManager>
         Seconds = newSeconds;
     }
 
+    public string BestScore()
+    {
+        return Highscore;
+    }
+
     public void ResetValues()
     {
-        FirstTime = true;
-
-        _minutes = 0f;
-        _seconds = 0f;
+        _minutes = 59f;
+        _seconds = 59f;
+        _highscore = "59:59";
 
         Minutes = _minutes;
         Seconds = _seconds;
+        Highscore = _highscore;
         
     }
 

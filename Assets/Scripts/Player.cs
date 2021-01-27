@@ -12,6 +12,7 @@ public class Player : Singleton<Player>, IDamageable
 {
     private Rigidbody2D _playerRb;
     private Animator _playerAnim;
+    private AudioSource _playerAS;
     private Vector3 _initialPositionToRespawn;
 
     private float _horizontalInput;
@@ -30,10 +31,7 @@ public class Player : Singleton<Player>, IDamageable
     {
         _playerRb = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<Animator>();
-
-        if (GameManager.Instance == null) { return ; }
-        
-        GameManager.Instance.FirstTime = false;
+        _playerAS = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -85,6 +83,7 @@ public class Player : Singleton<Player>, IDamageable
         if (GameController.Instance.GameOver) { return ; }
         
         GameController.Instance.ScorePlayer = -1;
+        _playerAS.Play();
 
         if (GameController.Instance.GameOver)
         {
