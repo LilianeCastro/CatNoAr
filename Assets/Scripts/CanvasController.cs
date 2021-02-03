@@ -13,8 +13,6 @@ public class CanvasController : MonoBehaviour
     [SerializeField] private GameObject _panelDefeat;
 
     [SerializeField] private Text _timeElapsed;
-    [SerializeField] private Text _bestTime;
-    [SerializeField] private Text _yourTime;
 
     private void Start()
     {
@@ -32,18 +30,6 @@ public class CanvasController : MonoBehaviour
 
     public void SetGameOverVictoryActive(string time)
     {
-        if (GameManager.Instance.IsNewHighScore)
-        {
-            _yourTime.text = "New Best Time";
-            _bestTime.text = "";
-        }
-        else
-        {
-            _yourTime.text = "Your Time";
-            print(GameManager.Instance.BestScore());
-            _bestTime.text = "Best Time: " + GameManager.Instance.BestScore();
-        }    
-
         _panelInGame.SetActive(false);
 
         _panelGameOver.SetActive(true);

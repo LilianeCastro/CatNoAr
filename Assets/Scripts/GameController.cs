@@ -53,10 +53,8 @@ public class GameController : Singleton<GameController>
             _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite;
 
             if (_scoreEnemy <= 0)
-            {
-                GameManager.Instance.UpdateScore(_minutes, _seconds);
-                
-                _gameOver = true;
+            {  
+                GameOver = true;
 
                 string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
                 _canvasController.SetGameOverVictoryActive(score);    
@@ -70,6 +68,10 @@ public class GameController : Singleton<GameController>
         get
         {
             return _gameOver;
+        }
+        set
+        {
+            _gameOver = value;
         }
     }
 
