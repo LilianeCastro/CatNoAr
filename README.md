@@ -8,6 +8,10 @@
 
 ![Logo Cat Noar Png](/Assets/Sprites/UI/Capa.png)
 
+## Important
+
+You must have Git LFS configured for your user account before cloning the repository: git lfs install
+
 ## Description
 
 > An adaptation of an old Brazilian popular song: "Atirei o pau no gato"
