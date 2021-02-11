@@ -40,7 +40,6 @@ public class Shooter : MonoBehaviour
         }
     }
 
-
     private void Awake()
     {
         _control = new Control();
@@ -96,4 +95,21 @@ public class Shooter : MonoBehaviour
         _canShoot = value;
         _feedbackShootIsReady.SetActive(_canShoot);
     }
+
+    /*private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _playerInAreaToShoot = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _playerInAreaToShoot = false;
+            transform.rotation = Quaternion.Euler(_initialRotation.x, _initialRotation.y, _initialRotation.z);
+        }
+    }*/
 }

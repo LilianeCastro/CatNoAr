@@ -106,10 +106,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
-      y: 123
+      x: 54
+      y: 125
       width: 237
-      height: 111
+      height: 108
     spriteID: 8c0d280219e37f990800000000000000
     internalID: 0
     spriteBone: []
@@ -120,7 +120,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 29, y: 123}
+    uvTransform: {x: 54, y: 125}
   - name: Title_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -150,8 +150,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 158
-      y: 5
+      x: 223
+      y: 4
       width: 176
       height: 109
     spriteID: 024a8cb6746d78890800000000000000
@@ -164,7 +164,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 158, y: 5}
+    uvTransform: {x: 223, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}

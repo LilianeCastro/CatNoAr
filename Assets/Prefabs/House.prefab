@@ -111,8 +111,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1564552, y: -0.14906439}
-  m_Size: {x: 0.5308383, y: 4.1179733}
+  m_Offset: {x: -1.2876998, y: -0.07578104}
+  m_Size: {x: 2.0867999, y: 3.8703117}
   m_Direction: 0
 --- !u!1 &1360715243420425967
 GameObject:
@@ -873,8 +873,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16426283, y: 0.5492619}
-  m_Size: {x: 0.74939525, y: 3.8700159}
+  m_Offset: {x: 0.18509261, y: 0.5700902}
+  m_Size: {x: 1.3326275, y: 3.7450356}
   m_Direction: 0
 --- !u!1 &7871145851796949496
 GameObject:
@@ -987,8 +987,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6941253, y: 0.5999408}
-  m_Size: {x: 0.4987154, y: 4.160099}
+  m_Offset: {x: 1.0296525, y: 0.1384006}
+  m_Size: {x: 2.1916354, y: 4.291741}
   m_Direction: 0
 --- !u!1001 &6689270459149281517
 PrefabInstance:

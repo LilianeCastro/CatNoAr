@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8958507823854578675}
   - component: {fileID: 3562931810876956239}
   - component: {fileID: 4098198417623610664}
-  - component: {fileID: 1631482355311630018}
+  - component: {fileID: 1526073726746270724}
   m_Layer: 0
   m_Name: feedbackShoot
   m_TagString: Untagged
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &1631482355311630018
+--- !u!82 &1526073726746270724
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

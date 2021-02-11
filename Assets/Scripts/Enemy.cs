@@ -51,17 +51,17 @@ public class Enemy : MonoBehaviour
             Instantiate(_projectileEnemyPrefab, _posHandEnemyToShoot.position, _projectileEnemyPrefab.transform.rotation);
 
             StartCoroutine(AttackEnemy());
-
-            yield return new WaitForSeconds(0.1f);
-            _manAnim.SetInteger("PlayerSide", -2);
-            
-            yield return new WaitForSeconds(0.4f);
-            _projectileShowSr.color = Color.white;
         }
         else
         {
             StopCoroutine(AttackEnemy());
         }
+
+        yield return new WaitForSeconds(0.1f);
+        _manAnim.SetInteger("PlayerSide", -2);
+        
+        yield return new WaitForSeconds(0.4f);
+        _projectileShowSr.color = Color.white;
     }
 
     IEnumerator MoveToRight()

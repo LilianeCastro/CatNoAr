@@ -53,7 +53,9 @@ public class GameController : Singleton<GameController>
             _imgScoreEnemy.sprite = _numberScore[_scoreEnemy].sprite;
 
             if (_scoreEnemy <= 0)
-            {  
+            {
+                GameManager.Instance.UpdateScore(_minutes, _seconds);
+                
                 GameOver = true;
 
                 string score = string.Format("{0:00}:{1:00}", _minutes, _seconds);
@@ -100,7 +102,8 @@ public class GameController : Singleton<GameController>
 
     private void Update()
     {
-        if (_gameOver) { return ; }
+        if (GameOver) { return ; }
+        
         _timeRemaining += Time.deltaTime;
 
         _minutes = Mathf.FloorToInt(_timeRemaining / 60); 

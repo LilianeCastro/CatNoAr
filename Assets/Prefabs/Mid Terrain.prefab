@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8401752550477086956}
   - component: {fileID: 782536354}
   - component: {fileID: 782536353}
-  - component: {fileID: 7518525338835036650}
-  - component: {fileID: 2640035071539314029}
   m_Layer: 9
   m_Name: Mid Terrain
   m_TagString: Untagged
@@ -77,38 +75,6 @@ RelativeJoint2D:
   m_AutoConfigureOffset: 1
   m_LinearOffset: {x: -0.3326016, y: 6.7}
   m_AngularOffset: 0
---- !u!58 &7518525338835036650
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001124255733176005}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 84458e60ed34dd743a8606ba21ed7599, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.205159, y: 6.713915}
-  serializedVersion: 2
-  m_Radius: 0.2814045
---- !u!58 &2640035071539314029
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001124255733176005}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 84458e60ed34dd743a8606ba21ed7599, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 3.5729058, y: 5.388112}
-  serializedVersion: 2
-  m_Radius: 0.20824051
 --- !u!1 &2391004763482232143
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,29 +167,21 @@ EdgeCollider2D:
   m_GameObject: {fileID: 2391004763482232143}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 7c0353ac45a20bf4197829835310dbb1, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.7808056, y: 1.0276405}
-  - {x: -5.7785654, y: 1.051117}
-  - {x: -5.768302, y: 1.0699273}
-  - {x: -5.7569914, y: 1.0878824}
-  - {x: -5.739812, y: 1.1011481}
-  - {x: -5.7231817, y: 1.1022426}
+  - {x: -5.7907815, y: 1.0600625}
   - {x: -1.6524415, y: 1.190156}
   - {x: -0.5893063, y: 0.9076062}
   - {x: 1.8064287, y: 0.2518059}
   - {x: 2.6934826, y: -0.21947384}
   - {x: 2.7288864, y: -0.3663218}
   - {x: 4.1050663, y: -0.266194}
-  - {x: 4.1939793, y: -0.27292943}
-  - {x: 4.2559648, y: -0.28602576}
-  - {x: 4.274496, y: -0.29174805}
-  - {x: 4.3038898, y: -0.3114835}
+  - {x: 4.2502775, y: -0.25057065}
 --- !u!1 &4647114884314387839
 GameObject:
   m_ObjectHideFlags: 0
